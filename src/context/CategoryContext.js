@@ -7,7 +7,9 @@ export const CategoryConsumer = CategoryContext.Consumer;
 class CategoryProvider extends Component {
     token = 'CL5LO6OO7W6UVBSIIDQB';
 
-    state = {};
+    state = {
+        categories: []
+    };
 
     componentDidMount() {
         this.getCategories();
