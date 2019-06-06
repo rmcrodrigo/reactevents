@@ -20,8 +20,7 @@ class CategoryProvider extends Component {
         let categories = await axios.get(url);
         this.setState({
             categories: categories.data.categories
-        })
-        console.log(categories.data.categories);
+        });
     }
 
     render() {
