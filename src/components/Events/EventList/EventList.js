@@ -7,10 +7,9 @@ const EventList = () => {
         <div className="uk-child-width-1-3@m" uk-grid="true">
             <EventConsumer>
                 { (value) => {
-                    console.log(value);
                     return (
-                        value.events && value.events.events ? value.events.events.map((event, key) => (
-                            <Event key={key} event={event} />
+                        value.events && value.events.events ? value.events.events.map((event) => (
+                            <Event key={event.id} event={event} />
                         )) : null
                     )}
                 }

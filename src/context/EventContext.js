@@ -6,7 +6,7 @@ const EventContext = React.createContext();
 export const EventConsumer = EventContext.Consumer;
 
 class EventProvider extends Component {
-    token = 'CL5LO6OO7W6UVBSIIDQB';
+    token = '';
 
     state = {
         events: []

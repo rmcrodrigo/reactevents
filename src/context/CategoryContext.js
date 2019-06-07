@@ -5,7 +5,7 @@ const CategoryContext = React.createContext();
 export const CategoryConsumer = CategoryContext.Consumer;
 
 class CategoryProvider extends Component {
-    token = 'CL5LO6OO7W6UVBSIIDQB';
+    token = '';
 
     state = {
         categories: []
